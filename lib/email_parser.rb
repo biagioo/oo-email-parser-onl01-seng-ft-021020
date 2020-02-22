@@ -14,8 +14,8 @@ class EmailAddressParser
     
     def parse
      # binding.pry
-      emails.split(" ")
-      emails.each do |string| 
+      split_emails = emails.split(" ")
+      split_emails.each do |string| 
       if string.include?(",")
         string.chomp(",")
         end 
