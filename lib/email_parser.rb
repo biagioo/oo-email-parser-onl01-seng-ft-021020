@@ -18,6 +18,7 @@ class EmailAddressParser
       emails.each do |string| 
       if string.include?(",")
         string.chomp(",")
+        end 
       end 
     end 
   
