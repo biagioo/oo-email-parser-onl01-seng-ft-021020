@@ -17,9 +17,10 @@ class EmailAddressParser
       split_emails = emails.split(" ")
       split_emails.each do |string| 
       if string.include?(",")
-        string.chomp(",")
+        string.chomp!(",")
         end 
       end 
+      split_emails
     end 
   
 end 
