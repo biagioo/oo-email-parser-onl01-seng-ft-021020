@@ -13,8 +13,12 @@ class EmailAddressParser
     end 
     
     def parse
-      binding.pry
+     # binding.pry
       emails.split(" ")
+      emails.each |string| 
+      if string.include?(",")
+        string.chomp(",")
+      end 
     end 
   
 end 
