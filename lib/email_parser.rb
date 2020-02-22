@@ -20,7 +20,7 @@ class EmailAddressParser
         string.chomp!(",")
         end 
       end 
-      split_emails
+      split_emails.uniq
     end 
   
 end 
