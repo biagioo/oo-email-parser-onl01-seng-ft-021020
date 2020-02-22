@@ -6,16 +6,13 @@
 class EmailAddressParser 
     attr_accessor :emails
     
-   def EmailAddressParser 
-     
-   end 
    
    def intialize(email)
       @emails = email
       
     end 
     
-    def self.parse
+    def parse
       emails.split(", ").strip
     end 
   
